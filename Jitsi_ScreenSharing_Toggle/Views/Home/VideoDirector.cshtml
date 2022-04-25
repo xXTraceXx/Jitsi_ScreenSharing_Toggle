@@ -1,0 +1,22 @@
+﻿@section Scripts {
+    <script type="text/javascript" src="~/js/videoDirector.js"></script>
+}
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+<h1>Director</h1>
+
+<button id="startVideo">Start Video</button>
+<button id="startScreenSharing">Screen Sharing</button>
+<button id="addRemoveVideo">Add/Remove Video</button>
+
+<div>
+    <video id="remoteVideo_01" poster="~/resources/avatar.jpg" autoplay playsinline muted></video>
+</div>
+<div>
+    <video id="remoteVideo_02" poster="~/resources/avatar.jpg" autoplay playsinline muted></video>
+</div>
+<iframe src="https://beamstream-rt-2.com/jitsi/Home/Live" style="width: 100%" 
+        onload="this.style.height=(this.contentWindow.document.body.scrollHeight+30)+'px';" 
+></iframe>
