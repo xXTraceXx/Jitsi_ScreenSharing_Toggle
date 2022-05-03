@@ -1,0 +1,19 @@
+﻿@section Scripts {
+    <script type="text/javascript" src="~/js/leaveRoom.js"></script>
+}
+
+@{
+    ViewData["Title"] = "Leave Room";
+}
+
+<h1>Leave Room</h1>
+
+<button id="joinRoomBtn">Join Room</button>
+<button id="leaveRoomBtn">Leave Room</button>
+
+<div id="jitsiContainer" style="display: grid; grid-template-columns: 50%  50%;">
+    <div>
+        <h3 id="pid-01-header"></h3>
+        <video id="remoteVideo_01" poster="~/resources/avatar.jpg" style="height: 360px; width: 480px;" autoplay playsinline muted></video>
+    </div>
+</div>

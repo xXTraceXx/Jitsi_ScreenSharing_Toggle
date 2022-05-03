@@ -38,6 +38,11 @@ namespace Jitsi_ScreenSharing_Toggle.Controllers
             return View();
         }
 
+        public IActionResult LeaveRoom()
+        {
+            return View();
+        }
+
         public IActionResult Privacy()
         {
             return View();
