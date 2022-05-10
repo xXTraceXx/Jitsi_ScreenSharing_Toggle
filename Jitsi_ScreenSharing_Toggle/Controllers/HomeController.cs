@@ -48,6 +48,11 @@ namespace Jitsi_ScreenSharing_Toggle.Controllers
             return View();
         }
 
+        public IActionResult Delay()
+        {
+            return View();
+        }
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {

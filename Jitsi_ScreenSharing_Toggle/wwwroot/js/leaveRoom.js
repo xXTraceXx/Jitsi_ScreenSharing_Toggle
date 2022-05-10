@@ -16,7 +16,7 @@
         const leaveRoomBtn = $('#leaveRoomBtn');
 
         joinJitsiRoom('miau123', on_trackAdded, on_trackRemoved);
-        console.info('joined jitsiRoom successfully...');
+        console.info('joined jitsiRoom successfully...');   
         clickedBtn.hide();
         leaveRoomBtn.show();
     }
